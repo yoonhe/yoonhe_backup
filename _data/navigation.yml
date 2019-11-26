@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Home"
+    url: https://yoonhe.github.io/
+  - title: "IM Flex"
+    url: /categories/IM_Flex/
+  - title: "JavaScript"
+    url: /categories/JavaScript/
+  - title: "HTTP"
+    url: /categories/HTTP/
+  - title: "algorithm"
+    url: /categories/algorithm/
