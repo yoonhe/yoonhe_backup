@@ -5,5 +5,3 @@ layout: category
 author_profile: true
 taxonomy: ETC
 ---
-
-ETC
