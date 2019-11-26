@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: https://yoonhe.github.io/
+  - title: "ETC"
+    url: /categories/ETC/
   - title: "IM Flex"
     url: /categories/IM_Flex/
   - title: "JavaScript"
@@ -10,5 +10,3 @@ main:
     url: /categories/HTTP/
   - title: "Algorithm"
     url: /categories/algorithm/
-  - title: "ETC"
-    url: /categories/ETC/
