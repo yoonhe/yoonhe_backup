@@ -36,7 +36,8 @@ let stringifiableObjects = [
 ];
 stringifiableObjects.map(elem => JSON.stringify(elem));
 
-/* 결과값 */
+/*  
+///// 결과값 ///// 
 0: "9"
 1: "null"
 2: "true"
@@ -57,6 +58,7 @@ stringifiableObjects.map(elem => JSON.stringify(elem));
 17: "{"a":["b","c"]}"
 18: "[{"a":"b"},{"c":"d"}]"
 19: "{"a":[],"c":{},"b":true}"
+*/
 ```
 
 ```js
@@ -67,8 +69,10 @@ let unstringifiableValues = {
 
 JSON.stringify(unstringifiableValues);
 
-/* 결과값 */
+/* 
+//// 결과값 //// 
 "{}"
+*/
 ```
 
 1. number, boolean, null => 문자열로 변환된다
