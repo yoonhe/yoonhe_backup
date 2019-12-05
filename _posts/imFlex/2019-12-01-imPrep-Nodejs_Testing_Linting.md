@@ -40,47 +40,7 @@ categories:
     ```
 
 ### < Window에서 설치하는 방법 >
-
-1. PowerShell을 관리자 권한으로 열어 실행하고 명령어를 입력하다.
-
-    ```
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-    ```
-
-2. Windows Store로 이동하여 원하는 Linux를 설치한다.
-
-3. 시작 메뉴에서 Ubuntu.exe를 시작하면 sudo에 대한 사용자 이름과 비밀번호를 입력하라는 메시지가 표시된다. 이렇게 되면 Linux 설치 완료
-
-4. Installing Node
-
-    ```
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-    source ~/.bashrc
-    nvm install --lts
-    ```
-5. 버전이 잘 나오면 NVM 설치 성공!
-
-    ```
-    $ nvm --version
-    ```
-
-6. Install Node
-
-    NVM을 사용하여 Node.js를 설치  
-
-    아래 명령어와 같이 설치하고싶은 node version을 입력해준다
-
-    ```
-    $ nvm install 10.13.0
-    ```
-
-7. Node 버전이 확인된다면 Node 설치 성공!
-
-    ```
-    $ node -v
-    ```
-    
-- [참고 링크](https://daverupert.com/2018/04/developing-on-windows-with-wsl-and-visual-studio-code/)
+... 작성중 ...
 
 
 ## 2. Jest 설치방법
