@@ -31,11 +31,8 @@ categories:
 
 💁‍♀️ 1,2,3 결과
 
-	```js
-	console.log('fruit1 ? ', fruit1.name)
-	// fruit1 ?  banna
-	console.log('fruit2 ? ', fruit2.name)
-	// fruit2 ?  banna
-	console.log('fruit3 ? ', fruit3.name)
-	// fruit3 ?  banna
-	```
+```js
+console.log('fruit1 ? ', fruit1.name) // fruit1 ?  banna
+console.log('fruit2 ? ', fruit2.name) // fruit2 ?  banna
+console.log('fruit3 ? ', fruit3.name) // fruit3 ?  banna
+```
