@@ -61,7 +61,7 @@ let food1 = new Food('apple');
 - `__proto__`속성은 모든 객체가 빠짐없이 가지고 있는 속성이다.
 - `__proto__`는 __객체가 생성될 때 조상이었던 함수의 Prototype Object를 가리킨다.__(그래서 Prototype Object의 속성을 참조하는 것이 가능하다)
 - food1객체는 Food함수로부터 생성되었으니 Food 함수의 Prototype Object를 가리키고 있는 것
-- __'food1'__객체가 __'eat메소드'__를 직접 가지고 있지 않기 때문에 __'eat메소드'__를 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 undefined를 리턴한다. 이렇게 `__proto__`속성을 통해 상위 프로토타입과 연결되어있는 형태를 프로토타입 체인(Chain)이라고 한다
+- `food1`객체가 `eat메소드`를 직접 가지고 있지 않기 때문에 `eat메소드`를 찾을 때 까지 상위 프로토타입을 탐색한다. 최상위인 Object의 Prototype Object까지 도달했는데도 못찾았을 경우 undefined를 리턴한다. 이렇게 `__proto__`속성을 통해 상위 프로토타입과 연결되어있는 형태를 프로토타입 체인(Chain)이라고 한다
 
 
     
