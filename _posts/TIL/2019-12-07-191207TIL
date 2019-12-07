@@ -1,0 +1,29 @@
+---
+title: "2019-12-07 TIL"
+categories:
+  - TIL
+---
+
+## 오늘 해야 할 일
+
+- [x] chekpoint 1,2,3
+- [x] Instantiation Patterns 4가지 복습
+- [x] oop, prototype 복습
+- [x] 자료구조(Stack, Queue)의 모양 추상적으로 그림 그리기
+- [x] 자료구조(Stack, Queue)가 가지고 있는 Method를 pseudo code (의사 코드) 로 표현해보기
+
+## 느낀점
+
+- 자료구조(Stack, Queue)가 가지고 있는 Method를 1차로 그림으로 표현해보고 2차로 사람의 언어로 표현해보았다. 프로그래밍을 할 때 무작정 코딩을 하는 것 보다는 그림 또는 사람의 언어로 표현해 본 후 그것을 토대로 코딩을 하는 것이 좋다고 한다. 앞으로 무작정 코드부터 쓰는 것이 아니라 pseudo code (의사 코드)를 미리 작성하는 습관을 가져야겠다.  
+
+## 내일 할 일
+
+- 아래의 각 자료구조에 대해 알아보기
+
+  1. Linked List
+  2. Graph
+  3. Tree
+  4. Binary Search Tree
+  5. Hash Table
+
+
