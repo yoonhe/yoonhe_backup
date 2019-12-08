@@ -4,7 +4,7 @@ categories:
   - DataStructure
 ---
 
-## 구조
+## Linked list
 ![image.png](https://images.velog.io/post-images/yhe228/892a1010-19bd-11ea-b9e3-059ed5652c45/image.png)
 
 - Head에는 첫번째 노드에 대한 정보가 저장되어있다.
