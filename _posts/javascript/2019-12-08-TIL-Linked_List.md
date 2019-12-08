@@ -1,7 +1,7 @@
 ---
 title: "Data structure - Linked list"
 categories:
-  - JavaScript
+  - DataStructure
 ---
 
 ## 구조
