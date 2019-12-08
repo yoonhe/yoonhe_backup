@@ -1,7 +1,7 @@
 ---
 title: "Queue & Stack"
 categories:
-  - JavaScript
+  - DataStructure
 ---
 
 ## Queue
