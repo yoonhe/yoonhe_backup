@@ -6,6 +6,8 @@ main:
     url: /categories/Im_Flex/
   - title: "JavaScript"
     url: /categories/JavaScript/
+  - title: "Data Structure"
+    url: /categories/DataStructure/
   - title: "HTTP"
     url: /categories/HTTP/
   - title: "Algorithm"
