@@ -6,7 +6,8 @@ categories:
 
 ## Linked list
 ![image.png](https://images.velog.io/post-images/yhe228/892a1010-19bd-11ea-b9e3-059ed5652c45/image.png)
-
+  
+- 엘리먼트와 엘리먼트 간의 연결(link)을 이용해서 리스트를 구현한 것
 - Head에는 첫번째 노드에 대한 정보가 저장되어있다.
 - 각각의 노드에는 노드값과 다음 노드에 대한 정보가 들어있다. 
 - 다음 노드에 대한 정보를 가지고있기 때문에 하나의 연결된 값의 모임을 만들 수 있다.
