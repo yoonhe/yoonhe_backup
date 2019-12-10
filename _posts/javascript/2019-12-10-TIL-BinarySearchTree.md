@@ -11,9 +11,6 @@ categories:
 - 이진탐색과 연결리스트가 서로의 단점을 보완해준다.
 ![image.png](https://images.velog.io/post-images/yhe228/2d9a0ba0-1b08-11ea-af97-59e7d03a8f7d/image.png)
 
-
-💁‍♀️ [참고블로그](https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/)
-
 ### 이진탐색트리 동작 원리
 - 왼쪽 서브트리는 루트노드보다 작은 값을 가진 노드로 이루어져 있다.
 - 오른쪽 서브트리는 루트노드보다 큰 값을 가진 노드로 이루어져 있다.
@@ -26,3 +23,7 @@ categories:
 1. 루트노드(8)가 `11`보다 작기때문에 왼쪽 서브트리는 탐색할 필요가 없으며 오른쪽 서브티리만 탐색하면 된다. 탐색공간이 줄어들었다..!
 2. 서브트리의 루트노트(9)가 `11`보다 작기때문에 오른쪽 서브트리를 탐색한다.
 3. 오른쪽 트리에 있는 11을 찾았다.
+
+
+
+💁‍♀️ [참고블로그](https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/)
