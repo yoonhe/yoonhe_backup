@@ -4,11 +4,12 @@ categories:
   - DataStructure
 ---
 
+
 ## Hash Table
 해시 테이블은 연관배열 구조를 이용하여 키(key)에 결과 값(value)을 저장하는 자료구조이다.
 * 연관배열 구조 : 키 1개와 값 1개가 1:1로 연관되어 있는 자료구조이다.
 
-## 해쉬 테이블의 구조
+## Hash Table 구조
 ![image.png](https://images.velog.io/post-images/yhe228/06d5b8a0-1b1e-11ea-84ae-6db8b11a429d/image.png)  
 키는 해시함수를 통해 해시로 변경되고 해시는 값과 매칭되어 저장소에 저장된다.
 - 키(key)
@@ -21,15 +22,56 @@ categories:
 - 해시(Hash) : 해시 함수의 결과물이다, 저장소(bucket)에서 값과 매칭되어 저장된다.
 - 값(value) : 저장소에(bucket)에 최종적으로 저장되는 값으로 키와 매칭되어 저장, 삭제, 검색, 접근이 가능해야 한다.
 
+### Hash table 동작 원리
+1. 키를 해쉬함수에 넣는다
+2. 해쉬함수는 키를 특정 해시로 변경해준다.
+3. 특정 해시에 값을 넣는다
+4. 앞으로 해당키가 해쉬함수에 들어가면 항상 같은 해시로 변환되어 해시와 매칭되는 값을 리턴한다
 
-## Hash Collision(해시 충돌)
-해시 충돌에 대해서는 아래 블로그에 자세하게 나와있다.
-블로그에 설명이 너무 잘되어있다..!
-[참고 블로그](https://velog.io/@cyranocoding/Hash-Hashing-Hash-Table%ED%95%B4%EC%8B%9C-%ED%95%B4%EC%8B%B1-%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%9D%B4%ED%95%B4-6ijyonph6o)
+#### 예시)
+ex) dog를 넣으면 happy가 나와야할때 해쉬테이블의 기능 
+1. dog를 해쉬함수에 넣으면
+2. dog는 1(hash)로 변경된다.
+3. Array의 1번 인덱스에 happy를 넣는다
+4. 항상 dog를 넣으면 해쉬함수는 1(hash)로 변경해준다.
+5. Array는 index 1과 매칭되는 값을 반환한다.
 
+### Hash Function 특징
+1. 항상 내가 가진 Array 길이 안의 값만 반환할 수 있음 ( 0 to length - 1 )
+2. 특정 키를 넣었을때 항상 같은 값(hash)이 나와야함
+3. 어떠한 저장도 할 수 없음, 그때그때 값을 주면 내뱉을 수 있어야함(기억하는게 아님)
 
+### 충돌 - 하나의 Hash가 여러개의 값을 가질 경우
+![image.png](https://images.velog.io/post-images/yhe228/242cf650-1fcb-11ea-8782-2db8696a2989/image.png) 
+출처 : 코드스테이츠  
 
+- storage에 값을 직접 넣지 않고, buckets(배열 또는 연결리스트로 구현)을 넣어 두개 이상의 튜플을 넣을 수 있도록 만든다.	
+    ```js
+      0:  [{ Brenden: Eich }]
+      1:  [{ Steven: Tyler }]
+      2:  [{ Dr.: Sunshine }, { Alan: Turing }]
+      3:  [{ Mr.: Doob }]
+      4:
+      5:  [{ George: Harrison }, { John: Resig }]
+	```
 
+#### array가 계속 늘어난다면?
+- Hash Tables Resizing 
+    - Hash Table이 25% ~ 75%가 차있을때 제일 효과적로 운영됨
+    - 25% 이하 : length / 2
+    - 75% 이상 : length * 2
+    
+- 코드로 구현 한다면? => [참고](https://github.com/codestates/help-desk/issues/9340)
+	1. 변경된 사이즈의 스토리지를 새로 생성
+    	- 해시 테이블의 스토리지 사이즈를 직접 조절하는 것이 아니라 스토리지를 새로 생성해야함
+    2. 기존에 있던 스토리지에 저장되있던 값들을 전부 다시 해싱해서 새 스토리지에 넣어준다.
+    	- 스토리지의 사이즈가 리사이징 되었기 때문에 다시 해싱해야함
+    3. 1,2번 작업이 끝난후 기존에 있던 스토리지에 새 스토리지 값을 할당해준다.(리사이징된 스토리지와 바꿔치기)
+    
+#### Hash Table이 O(n) Time Complexity를 가지는 경우
+- 해시테이블이 커질때
+	- 해시테이블을 키워준 후에 모든 요소를 해싱을 다시 해주어야함
+- 해싱된 모든 키가 동일한 버킷에 담길때
 
 ## Mehod
 키와 값이 주어졌을때, 아래와 같은 기능을 사용할 수 있다.
@@ -49,8 +91,7 @@ categories:
 2. 공간 효율성이 떨어진다.
 - 데이터가 저장되기 전에 미리 저장공간을 확보해 놓아야 한다. 공간이 부족하거나 아예 채워지지 않은 경우가 생길 가능성이 있다.
 
-3. Hash Function의 의존도가 높다.
-- 평균 데이터 처리의 시간복잡도는 O(1)이지만, 이는 해시 함수의 연산을 고려하지 않는 결과이다. 해시함수가 매우 복잡하다면 해시테이블의 모든 연산의 시간 효율성은 증가할 것이다.
+
 
 
 💁‍♀️ [참고블로그](https://velog.io/@cyranocoding/Hash-Hashing-Hash-Table%ED%95%B4%EC%8B%9C-%ED%95%B4%EC%8B%B1-%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%9D%B4%ED%95%B4-6ijyonph6o)
