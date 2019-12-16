@@ -3,6 +3,7 @@ title: "Data structure - Time Complexity "
 categories:
   - DataStructure
 ---
+해당 포스트에 쓰인 모든 이미지의 출처는 코드스테이츠입니다.
 
 ## 주제	
 1. 시간복잡도가 무엇이고 왜 사용되는지?
@@ -28,12 +29,9 @@ categories:
 숫자의 배열에서 두 수의 차가 가장 큰 것을 찾는 문제
 ### 1. 모든 경우의 수를 확인하는 방법 - n² => O(n²)
 ![image.png](https://images.velog.io/post-images/yhe228/3a060e10-1fd2-11ea-b5aa-f7315714169a/image.png)
-출처 : 코드스테이츠
 
 ### 2. 가장 큰 수와 작은 수를 확인하는 방법 - 2n => O(n)
-
 ![image.png](https://images.velog.io/post-images/yhe228/c44b16b0-1fd2-11ea-b240-73bff097bbe8/image.png)
-출처 : 코드스테이츠
 
 ### 3. 값이 정렬된 경우일 때 (오름차순일 경우) - 3 => O(1)
 - 최고로 빠른 시간 복잡도를 가진다.
@@ -46,7 +44,6 @@ categories:
 ## 요약 - Big-O Notation
 ### 1. constant : O(1)  
 ![image.png](https://images.velog.io/post-images/yhe228/458e49d0-1f02-11ea-bb32-855d58f2234e/image.png)  
-출처 : 코드스테이츠
 
 - 문제의 크기가 커져도 걸리는 시간은 항상 일정하다.
 - 값을 검색할 때, 객체에서 키를 알거나 배열에서 인덱스를 알고 있으면 언제나 한 단계만 걸린다.
@@ -54,28 +51,24 @@ categories:
 
 ### 2. logarithmic : O(log n)  
 ![image.png](https://images.velog.io/post-images/yhe228/60a80080-1f02-11ea-b3f4-e73280e2e0cc/image.png)  
-출처 : 코드스테이츠
 
 - 배열에서 값을 찾을 때, 어느 쪽에서 시작할지를 알고 있으면 검색하는 시간이 두배로 준다.
 - ex) 이진탐색트리 
    
 ### 3. linear : O(n)  
 ![image.png](https://images.velog.io/post-images/yhe228/81530a00-1f02-11ea-bb32-855d58f2234e/image.png)  
-출처 : 코드스테이츠
 
 - 데이터의 갯수만큼 탐색할 경우
 - linked list, Array 탐색
 
 ### 4. quadratic : O(n²)  
-![image.png](https://images.velog.io/post-images/yhe228/9402d270-1f02-11ea-bb32-855d58f2234e/image.png)
-출처 : 코드스테이츠  
+![image.png](https://images.velog.io/post-images/yhe228/9402d270-1f02-11ea-bb32-855d58f2234e/image.png) 
 
 - 문제를 풀기 위해 모든 조합과 방법을 시도할 때 사용된다.
 - for문 안에 for문
     
 ### 5. esponential : O(c²)  
 ![image.png](https://images.velog.io/post-images/yhe228/b70e6130-1f02-11ea-9142-41013861be0a/image.png)
-출처 : 코드스테이츠
 
 - recursion에서 memoiz기법을 사용하지 않았을때
 
@@ -123,15 +116,12 @@ Root Node => children => Left (OR) Right
 한쪽으로만 값이 몰릴 경우 => O(n)  
 ![image.png](https://images.velog.io/post-images/yhe228/7cb56720-1fe0-11ea-8629-d51f99813324/image.png)
 
-출처 : 코드스테이츠  
-
 __[ 위의 경우를 방지하기 위한 Solution ]__  
 1. 각 Parents의 왼쪽, 오른쪽 가지들의 깊이가 1을 초과하여 차이가 난다면 밸런스가 무너진 상태
 2. 밸런스가 무너질 때 마다 가지의 깊이가 더 깊은 쪽의 값을 얕은 쪽으로 이동시킨다.
 3. 이렇게 하면 트리의 복잡도는 항상 O(log n)
 
 ![image.png](https://images.velog.io/post-images/yhe228/c817f4d0-1fe0-11ea-8629-d51f99813324/image.png) 
-출처 : 코드스테이츠
 
 
 
