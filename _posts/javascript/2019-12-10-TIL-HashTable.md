@@ -69,7 +69,7 @@ dog를 넣으면 happy가 나와야할때 해쉬테이블의 기능
     - 25% 이하 : length / 2
     - 75% 이상 : length * 2
     
-- 코드로 구현 한다면? => [참고](https://github.com/codestates/help-desk/issues/9340)
+- 코드로 구현 한다면? => [참고](https://github.com/codestates/help-desk/issues/934)
 	1. 변경된 사이즈의 스토리지를 새로 생성
     	- 해시 테이블의 스토리지 사이즈를 직접 조절하는 것이 아니라 스토리지를 새로 생성해야함
     2. 기존에 있던 스토리지에 저장되있던 값들을 전부 다시 해싱해서 새 스토리지에 넣어준다.
