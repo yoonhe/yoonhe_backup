@@ -51,7 +51,9 @@ dog를 넣으면 happy가 나와야할때 해쉬테이블의 기능
 ![image.png](https://images.velog.io/post-images/yhe228/242cf650-1fcb-11ea-8782-2db8696a2989/image.png) 
 출처 : 코드스테이츠  
 
-- storage에 값을 직접 넣지 않고, buckets(배열 또는 연결리스트로 구현)을 넣어 두개 이상의 튜플을 넣을 수 있도록 만든다.	
+### 예시
+- storage에 값을 직접 넣지 않고, buckets(배열 또는 연결리스트로 구현)을 넣어 두개 이상의 튜플을 넣을 수 있도록 만든다.
+
     ```js
       0:  [{ Brenden: Eich }]
       1:  [{ Steven: Tyler }]
@@ -59,7 +61,7 @@ dog를 넣으면 happy가 나와야할때 해쉬테이블의 기능
       3:  [{ Mr.: Doob }]
       4:
       5:  [{ George: Harrison }, { John: Resig }]
-	```
+    ```
 
 ## array가 계속 늘어난다면?
 - Hash Tables Resizing 
