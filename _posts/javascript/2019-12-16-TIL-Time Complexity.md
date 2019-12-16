@@ -44,7 +44,7 @@ categories:
     3. 두개의 숫자를 빼준다
 
 ## 요약 - Big-O Notation
-### 1. constant : O(1)
+### 1. constant : O(1)  
 ![image.png](https://images.velog.io/post-images/yhe228/458e49d0-1f02-11ea-bb32-855d58f2234e/image.png)  
 출처 : 코드스테이츠
 
@@ -52,28 +52,28 @@ categories:
 - 값을 검색할 때, 객체에서 키를 알거나 배열에서 인덱스를 알고 있으면 언제나 한 단계만 걸린다.
 - ex) 배열에서 특정 인덱스 탐색, 해시테이블에서 추가
 
-### 2. logarithmic : O(log n) 
+### 2. logarithmic : O(log n)  
 ![image.png](https://images.velog.io/post-images/yhe228/60a80080-1f02-11ea-b3f4-e73280e2e0cc/image.png)  
 출처 : 코드스테이츠
 
 - 배열에서 값을 찾을 때, 어느 쪽에서 시작할지를 알고 있으면 검색하는 시간이 두배로 준다.
 - ex) 이진탐색트리 
    
-### 3. linear : O(n)
+### 3. linear : O(n)  
 ![image.png](https://images.velog.io/post-images/yhe228/81530a00-1f02-11ea-bb32-855d58f2234e/image.png)  
 출처 : 코드스테이츠
 
 - 데이터의 갯수만큼 탐색할 경우
 - linked list, Array 탐색
 
-### 4. quadratic : O(n²)
+### 4. quadratic : O(n²)  
 ![image.png](https://images.velog.io/post-images/yhe228/9402d270-1f02-11ea-bb32-855d58f2234e/image.png)
 출처 : 코드스테이츠  
 
 - 문제를 풀기 위해 모든 조합과 방법을 시도할 때 사용된다.
 - for문 안에 for문
     
-### 5. esponential : O(c²)
+### 5. esponential : O(c²)  
 ![image.png](https://images.velog.io/post-images/yhe228/b70e6130-1f02-11ea-9142-41013861be0a/image.png)
 출처 : 코드스테이츠
 
