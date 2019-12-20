@@ -10,7 +10,7 @@ categories:
 Student에서 Human의 Prototype에 있는 sleep 메소드를 사용하려면?  
 
 ### 잘못된 방법 - 1
-✍ john.__proto__ = Human.prototype;
+✍ `john.__proto__ = Human.prototype;`
 
 ```js
 function Human() {}
@@ -28,7 +28,7 @@ john.__proto__ = Human.prototype;
 `__proto__`는 참조하는 용도로만 사용해야 한다.
 
 ### 잘못된 방법 - 2
-✍ Student.prototype = Human.prototype
+✍ `Student.prototype = Human.prototype`
 
 ```js
 function Human() {}
@@ -56,7 +56,7 @@ Student의 prototype에 Human의 prototype을 참조하는 것이기 때문에 �
 같은 모양을 가졌지만 다른 reference를 가진 객체를 어떻게 하면 만들수 있을까?
 
 ### 좋은 방법 
-✍ Student.prototype = Object.create(Human.prototype);  
+✍ `Student.prototype = Object.create(Human.prototype);`
 
 > - MDN
 Object.create() 메서드는 지정된 프로토타입 객체 및 속성(property)을 갖는 새 객체를 만듭니다. 
