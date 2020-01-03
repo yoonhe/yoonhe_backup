@@ -78,7 +78,7 @@ Tree.prototype.map = function(callback) {
 4. 현재 초기값(initial value)에 3번에서 얻은 반환값인 새로운 트리노드를 인자로 넣고 addChild 메서드를 적용시킨다.
 5. addChild 메서드를 실행한 현재 초기값(initial value)이 this가 되고 이 this의 children에 3번에서 얻은 반환값인 새로운 트리노드를 push한다.
 6. 그리고 this를 반환 한다.
-7. addChild 메서드 실행이 끝나고 reduce로 돌아오면 반환된 this가 다음 자식 요소에 reduce를 실행할때 초기값(initial value)으로 들어간다.
+7. addChild 메서드 실행이 끝나고 reduce로 돌아오면 반환된 this가 다음 자식 요소에 reduce를 실행할때 누적값(accumulate)이 된다.
 
 
 
