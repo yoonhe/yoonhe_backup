@@ -65,8 +65,8 @@ let food1 = new Food('apple');
 
 
     
-💁‍♀️ [참고블로그](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67)
-
+💁‍♀️ [참고블로그 - 1](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67)
+💁‍♀️ [참고블로그 - 2](https://poiemaweb.com/js-prototype)
     
 
 
