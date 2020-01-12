@@ -63,6 +63,7 @@ rockPaperScissors(3)일때 => [ 'rock', 'rock', 'rock'], [ 'rock', 'rock', 'pape
         	- 앞에서 만들어진 결과값과 겹치면 값이 달라지기 때문에 새로운 저장공간에 현재 결과값을 담아 준 후 마지막에 result에 다시 할당해주기 위해서.
 
 ## 코드
+
 ```js
 var rockPaperScissors = function(number) {
   let basic = ["rock", "paper", "scissors"];
@@ -101,6 +102,7 @@ var rockPaperScissors = function(number) {
 
 
 ### 👨‍🏫 reference
+
 ```js
 var rockPaperScissors = function(rounds) {
   var sequences = [];
