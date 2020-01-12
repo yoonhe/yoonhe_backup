@@ -126,7 +126,7 @@ var rockPaperScissors = function(rounds) {
 - 2일때 => `[['rock', 'rock'], ['rock', 'paper'], ['rock', 'scissors'], ['paper', 'rock'], ['paper', 'paper'], ['paper', 'scissors'], ['scissors', 'rock'], ['scissors', 'paper'], ['scissors', 'scissors'] ]`
 
 #### ex) 숫자가 3일때
-1. `[]` 빈배열부터 시작한다. 숫자 : 0
+1. `generate([], 0)` => 첫번째로 `[]` 빈배열과 숫자 0을 인자로 넣고 재귀함수를 실행한다.
 2.  var plays = ['rock', 'paper', 'scissors']의 각요소를 순회한다.
 3. 첫번째로 'rock'요소에 접근한 후 1번의 `[]`에 연결시켜준 후 그것을 재귀함수의 첫번째 인자로 넣고 두번째 인자인 숫자에 +1을 하여 재귀함수를 실행한다.
 4. 두번째 인자의 숫자(1)와 목표숫자인 3이 같지 않으므로 다시 play의 각 요소를 순회한다.
