@@ -121,9 +121,9 @@ var rockPaperScissors = function(rounds) {
   return sequences;
 };
 ```
-0일때 => ` [[]] `
-1일때 => `[['rock'], ['paper'], ['scissors']]`
-2일때 => `[['rock', 'rock'], ['rock', 'paper'], ['rock', 'scissors'], ['paper', 'rock'], ['paper', 'paper'], ['paper', 'scissors'], ['scissors', 'rock'], ['scissors', 'paper'], ['scissors', 'scissors'] ]`
+- 0일때 => ` [[]] `  
+- 1일때 => `[['rock'], ['paper'], ['scissors']]` 
+- 2일때 => `[['rock', 'rock'], ['rock', 'paper'], ['rock', 'scissors'], ['paper', 'rock'], ['paper', 'paper'], ['paper', 'scissors'], ['scissors', 'rock'], ['scissors', 'paper'], ['scissors', 'scissors'] ]`
 
 #### ex) 숫자가 3일때
 1. `[]` 빈배열부터 시작한다. 숫자 : 0
