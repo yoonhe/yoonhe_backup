@@ -26,7 +26,7 @@ HTTP 메시지가 만들어진 시각. 자동으로 만들어진다.
 ### Content-Language
 - 사용자의 언어를 뜻한다.
 - 요청이나 응답이 무슨 언어인지와는 관련 없다.
-- 예를 들어 한국 사람한테 일본어를 가르치는 사이트일 경우, 페이지 언어는 일본어더라도 Content-Language는 ko-KR일 수 있다.
+- 예를 들어 한국 사람한테 일본어를 가르치는 사이트일 경우, 페이지 언어는 일본어더라도 Content-Language는 ko-KR일 수 있다.  
 ![image.png](https://images.velog.io/post-images/yhe228/2a3a2040-392f-11ea-9946-1dce64e3fe83/image.png)
 
 ### Content-Encoding
