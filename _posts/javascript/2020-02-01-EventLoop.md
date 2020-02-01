@@ -10,7 +10,7 @@ categories:
 - 엔진의 주요 두 구성요소
     - Memory Heap : 메모리 할당이 일어나는 곳
     - Call Stack : 코드 실행에 따라 호출 스택이 쌓이는 곳
-	![Screenshot from 2020-02-01 14-17-57.png](https://images.velog.io/post-images/yhe228/468a5600-44b2-11ea-b0c8-f5027889152a/Screenshot-from-2020-02-01-14-17-57.png)
+	![Screenshot from 2020-02-01 14-17-57.png](https://images.velog.io/post-images/yhe228/468a5600-44b2-11ea-b0c8-f5027889152a/Screenshot-from-2020-02-01-14-17-57.png)  
     [이미지 출처 : 캡틴판교 블로그]
     
 ## 자바스크립트 런타임
