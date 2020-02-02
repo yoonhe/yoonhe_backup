@@ -1,5 +1,5 @@
 ---
-title: "Node.js"
+title: "node.js 를 활용한 HTTP server 구축"
 categories:
   - JavaScript
 ---
