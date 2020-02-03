@@ -1,7 +1,7 @@
 ---
 title: "Event Loop?"
 categories:
-  - JavaScript
+  - Server
 ---
 
 ## 자바스크립트 엔진
