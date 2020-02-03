@@ -10,5 +10,7 @@ main:
     url: /categories/DataStructure/
   - title: "HTTP"
     url: /categories/HTTP/
+  - title: "SERVER"
+    url: /categories/Server/
   - title: "Algorithm"
     url: /categories/algorithm/
