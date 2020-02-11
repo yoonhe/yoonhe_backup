@@ -99,6 +99,7 @@ fetch에서 `get` 요청을 하게되면 서버에서 데이터를 문자열로 
 
 ### `res.send` 소스코드 분석
 
+```js
     res.send = function send(body) {
         var chunk = body;
     
@@ -130,6 +131,7 @@ fetch에서 `get` 요청을 하게되면 서버에서 데이터를 문자열로 
     
         return this;
     }
+```
 
 1. `res.send` 함수의 인자로 `body`를 받는다
 2. `body` 는 바로 `chuck`에  할당된다
