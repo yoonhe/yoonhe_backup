@@ -29,44 +29,51 @@ Merge Sort는 데이터들을 잘게 쪼갠 다음에 하나로 합치는 과정
 여기서 그림으로 표현하는 것의 중요성을 다시한번 느끼게 되었다..!
 
 ```js
-// 배열을 반으로 나누고, 재귀적으로 병합한다.
 function mergeSort(arr) {
-  debugger;
-  // 재귀함수 탈출조건 단일 요소로 구성된 배열이라면, 리턴
-  if (arr.length === 1) {
+  /**
+   * 1. 배열을 반으로 쪼개는 작업을 배열의 길이가 1이 될때까지 실행한다(재귀)
+   *    1. 배열의 길이를 2로 나누어 중간값을 구한다
+   *    2. 중간값을 기준으로 배열을 나눈다
+   * 2. 배열의 길이가 1이 되면 반으로 쪼개진 두개의 배열을 오름차순으로 정렬하여 다시 합쳐준다. 
+   */
+
+  if(arr.length === 1) {
     return arr;
   }
-  
-  const middle = Math.floor(arr.length / 2); // 배열의 중간 값
-  const left = arr.slice(0, middle); // left side items
-  const right = arr.slice(middle); // right side items
 
-  return merge(mergeSort(left), mergeSort(right));
+  const middleVal = Math.floor(arr.length/2);
+  const leftVal = arr.slice(0,middleVal);
+  const rightVal = arr.slice(middleVal);
+
+  return merge(mergeSort(leftVal),mergeSort(rightVal));
 }
 
-// 배열을 비교하고, 연결된 결과를 리턴한다.
 function merge(left, right) {
-  let result = [];
+  /**
+   * index를 0부터 시작하여 left와 right의 현재 인덱스의 값을 비교하여 더 작은 값을 result에 넣어준다
+   * 
+   * 더 작은 값이 있는 배열의 인덱스를 + 1 해준다 => 비교값 변경
+   * left와 right 둘중에 하나라도 현재 인덱스가 배열의 길이보다 크다면 loop를 돌지않는다 => 배열의 길이보다 큰 인덱스에 값이 존재하지 않기때문
+   * 
+   * while문을 빠져나오면 result의 값과 left, right의 현재 인덱스를 반환해준다
+   */
+
+  const mergeResult = [];
   let leftIndex = 0;
   let rightIndex = 0;
 
-  // left items와 right items 비교
   while(leftIndex < left.length && rightIndex < right.length) {
-    if (left[leftIndex] < right[rightIndex]) {
-      result.push(left[leftIndex]);
+    if(left[leftIndex] < right[rightIndex]) {
+      mergeResult.push(left[leftIndex]);
       leftIndex++;
     } else {
-      result.push(right[rightIndex]);
+      mergeResult.push(right[rightIndex]);
       rightIndex++;
     }
   }
 
-  let outputArr = [...result, ...left.slice(leftIndex), ...right.slice(rightIndex)];
-  return outputArr
+  return [...mergeResult,...left.slice(leftIndex), ...right.slice(rightIndex)];
 }
-
-const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
-console.log(mergeSort(list)); // [ 1, 2, 2, 3, 3, 3, 5, 6, 7, 8 ]
 ```
 
 
