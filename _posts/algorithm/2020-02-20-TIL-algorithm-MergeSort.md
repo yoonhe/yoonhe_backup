@@ -1,5 +1,5 @@
 ---
-title: "Merge Sort"
+title: "Toy problem 20번 - Merge Sort"
 categories:
   - algorithm
 ---
